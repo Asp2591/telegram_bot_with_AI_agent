@@ -1,0 +1,17 @@
+AtharvaBot/
+│── .env                # Environment variables (store your bot token here)
+│── main.py             # Main bot script
+│── requirements.txt    # Dependencies for the project
+│── config.py           # Configuration settings
+│── ai_agent.py         # AI agent using Phidata's Playground and Gemini
+│── handlers/
+│   ├── start.py        # /start command handler
+│   ├── help.py         # /help command handler
+│   ├── image_handler.py # Handles image uploads
+│   ├── text_handler.py  # Handles text questions
+│── images/             # Folder to store user-uploaded images
+│── utils/
+│   ├── download.py     # Utility function for downloading images
+│   ├── logger.py       # Logging functions
+│── playground.py       # Optional: Web UI for testing AI responses
+│── README.md           # Project documentation

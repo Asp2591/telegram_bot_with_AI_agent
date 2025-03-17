@@ -1,0 +1,28 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore environment variables
+.env
+
+# Ignore user-uploaded images
+images/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Ignore Python dependencies (optional, if using virtualenv)
+*.egg-info/
