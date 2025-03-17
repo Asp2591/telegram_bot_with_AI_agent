@@ -1,10 +1,10 @@
 # telegram_bot_with_AI_agent
 ---
 
-## 🌟 **telegram_bot_with_AI_agent** – AI-Powered Image & Text Analysis Bot 🤖🖼️  
+## 🌟 **AskAtharva_bot** ::: AI-Powered Image & Text Analysis Bot 🤖🖼️  
 
 ### 📌 **Overview**  
-**telegram_bot_with_AI_agent** is a **Telegram bot** powered by **Google Gemini 1.5 Flash** and **Phidata Playground**.  
+**AskAtharva_bot** is a **Telegram bot** powered by **Google Gemini 1.5 Flash** and **Phidata Playground**.  
 It allows users to **upload images** and **ask questions** about them, making AI-powered **image analysis** super easy!  
 
 ---
@@ -76,7 +76,7 @@ Feel free to **fork**, create a PR, or open issues!
 ---
 
 ## 📜 **License**  
-MIT License © 2025 **telegram_bot_with_AI_agent**  
+MIT License © 2025 **AskAtharva_bot**  
 
 ---
 
