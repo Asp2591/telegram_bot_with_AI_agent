@@ -22,7 +22,7 @@ It allows users to **upload images** and **ask questions** about them, making AI
 
 ---
 
-## 🌐 **Web App (Optional)**  
+## 🌐 **Flask Web App with HTML,CSS,JS (you can check the code in **web-app.py** file)**  
 In addition to the Telegram bot, you can also use the **web interface** to upload images and ask questions. This web app allows you to interact with the AI directly in your browser.
 
 ### 📌 **Web Features**  
@@ -39,7 +39,7 @@ In addition to the Telegram bot, you can also use the **web interface** to uploa
    ```  
 3️⃣ To start the web server, run:  
    ```sh
-   python app.py
+   python web-app.py
    ```  
 4️⃣ Open your browser and go to `http://127.0.0.1:5000/` to interact with the web app.
 
