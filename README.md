@@ -1,3 +1,7 @@
+Here's your updated README with a new section added for the **Web App**:
+
+---
+
 # telegram_bot_with_AI_agent
 ---
 
@@ -15,6 +19,29 @@ It allows users to **upload images** and **ask questions** about them, making AI
 ✅ **AI-Powered Responses** – Uses **Gemini 1.5 Flash** for intelligent answers.  
 ✅ **Fast & Efficient** – Handles both text & image inputs with structured output.  
 ✅ **Web Playground (Optional)** – Test AI responses in a browser!  
+
+---
+
+## 🌐 **Web App (Optional)**  
+In addition to the Telegram bot, you can also use the **web interface** to upload images and ask questions. This web app allows you to interact with the AI directly in your browser.
+
+### 📌 **Web Features**  
+✅ **Upload Images** – Use the browser interface to upload images.  
+✅ **Ask Questions** – Just type a question about the image.  
+✅ **Responsive Design** – The web app is optimized for both desktop and mobile.  
+✅ **Dark Mode** – Toggle between light and dark modes for the best user experience.
+
+### 🛠 **How to Run the Web App Locally**  
+1️⃣ Clone the repository as mentioned in the setup section.  
+2️⃣ Ensure you have the necessary dependencies installed by running:  
+   ```sh
+   pip install -r requirements.txt
+   ```  
+3️⃣ To start the web server, run:  
+   ```sh
+   python app.py
+   ```  
+4️⃣ Open your browser and go to `http://127.0.0.1:5000/` to interact with the web app.
 
 ---
 
@@ -80,4 +107,4 @@ MIT License © 2025 **AskAtharva_bot**
 
 ---
 
-Let me know if you need any tweaks! 🚀🔥
+Let me know if you'd like to make further adjustments! 🚀
