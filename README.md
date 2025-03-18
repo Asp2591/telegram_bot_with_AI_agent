@@ -9,6 +9,8 @@ Here's your updated README with a new section added for the **Web App**:
 ### 📌 **Overview**  
 **AskAtharva_bot** is a **Telegram bot** powered by **Google Gemini 1.5 Flash** and **Phidata Playground**.  
 It allows users to **upload images** and **ask questions** about them, making AI-powered **image analysis** super easy!  
+
+---
 ---
 
 ## Note: I have built an web-application as well as telegram bot.I have uploaded code for both 
