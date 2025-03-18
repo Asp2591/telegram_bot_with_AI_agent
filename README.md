@@ -5,8 +5,8 @@ Here's your updated README with a new section added for the **Web App**:
 # telegram_bot_with_AI_agent
 ---
 
-## 🌟 **AskAtharva_bot** ::: AI-Powered Image & Text Analysis Bot 🤖🖼️  
-
+## 🌟 **AskAtharva_bot** :: AI-Powered Image & Text Analysis Bot 🤖🖼️  
+## 1) This is for telegram bot
 ### 📌 **Overview**  
 **AskAtharva_bot** is a **Telegram bot** powered by **Google Gemini 1.5 Flash** and **Phidata Playground**.  
 It allows users to **upload images** and **ask questions** about them, making AI-powered **image analysis** super easy!  
@@ -22,7 +22,7 @@ It allows users to **upload images** and **ask questions** about them, making AI
 
 ---
 
-## 🌐 **Flask Web App with HTML,CSS,JS (you can check the code in **web-app.py** file)**  
+## 2) 🌐 **Flask Web App with HTML,CSS,JS (you can check the code in **web-app.py** file)**  
 In addition to the Telegram bot, you can also use the **web interface** to upload images and ask questions. This web app allows you to interact with the AI directly in your browser.
 
 ### 📌 **Web Features**  
