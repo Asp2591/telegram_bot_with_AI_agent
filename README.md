@@ -1,8 +1,6 @@
-Here's your updated README with a new section added for the **Web App**:
-
 ---
 
-# telegram_bot_with_AI_agent
+# Telegram_bot_with_AI_agent
 ---
 
 ## 🌟 **AskAtharva_bot** :: AI-Powered Image & Text Analysis Bot 🤖🖼️  
@@ -15,7 +13,7 @@ It allows users to **upload images** and **ask questions** about them, making AI
 
 ## Note: I have built an web-application as well as telegram bot.I have uploaded code for both 
 1)Flask web-app
-2)telegram bot (AskAtharva_bot)
+2)Telegram bot (AskAtharva_bot)
 
 ---
 
