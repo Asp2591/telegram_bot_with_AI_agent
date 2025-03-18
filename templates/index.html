@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: black;
+            margin: 50px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode .container {
+            background: #1e1e1e;
+            color: white;
+        }
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: block;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background: white;
+            color: black;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode textarea, .dark-mode input {
+            background: #333;
+            color: white;
+            border: 1px solid #666;
+        }
+        .toggle-dark {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: black;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            z-index: 1000;
+        }
+        .toggle-dark:hover {
+            background-color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .toggle-dark {
+                top: 5px;
+                right: 5px;
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<button class="toggle-dark" onclick="toggleDarkMode()">
+    <span id="mode-icon">🌙</span> <span id="mode-text">Enable Dark Mode</span>
+</button>
+
+<div class="container">
+    <h2>Image Analysis Bot</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if image %}
+    <h3>Uploaded Image:</h3>
+    <img src="{{ url_for('static', filename='uploads/' + image) }}" alt="Uploaded Image">
+    
+    <form action="/" method="post">
+        <input type="text" name="question" placeholder="Ask a question about the image...">
+        <button type="submit">Ask</button>
+    </form>
+    {% endif %}
+
+    {% if analysis %}
+    <h3>Analysis Result:</h3>
+    <textarea readonly>{{ analysis }}</textarea>
+    {% endif %}
+</div>
+
+<script>
+    // Function to toggle dark mode and update button text/icon
+    function toggleDarkMode() {
+        const body = document.body;
+        const modeIcon = document.getElementById("mode-icon");
+        const modeText = document.getElementById("mode-text");
+
+        // Toggle dark mode class
+        body.classList.toggle("dark-mode");
+
+        // Save mode in localStorage
+        const isDarkMode = body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
+
+        // Update button text and icon
+        if (isDarkMode) {
+            modeIcon.textContent = "☀️";
+            modeText.textContent = "Enable Light Mode";
+        } else {
+            modeIcon.textContent = "🌙";
+            modeText.textContent = "Enable Dark Mode";
+        }
+    }
+
+    // Check localStorage and apply dark mode if enabled
+    window.onload = function() {
+        const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+        if (isDarkMode) {
+            document.body.classList.add("dark-mode");
+            document.getElementById("mode-icon").textContent = "☀️";
+            document.getElementById("mode-text").textContent = "Enable Light Mode";
+        }
+    };
+</script>
+
+</body>
+</html>
