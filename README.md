@@ -38,10 +38,13 @@ In addition to the Telegram bot, you can also use the **web interface** to uploa
    ```  
 4️⃣ Open your browser and go to `http://127.0.0.1:5000/` to interact with the web app.
 
+### 🌑 Dark Mode
+![web-app](readme_images/web-app.png)
+
 ---
 
 ## ⚙️ **Setup & Installation**  
-## 1) This is for telegram bot 
+## 2) This is for telegram bot 
 
 ---
 
@@ -75,6 +78,7 @@ Token=YOUR_TELEGRAM_BOT_TOKEN
 python main.py
 ```
 
+![web-app](readme_images/telegram-bot.png)
 ---
 
 ## 🎮 **How to Use the Bot?**  
