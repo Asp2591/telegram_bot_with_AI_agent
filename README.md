@@ -16,14 +16,6 @@ It allows users to **upload images** and **ask questions** about them, making AI
 ## Note: I have built an web-application as well as telegram bot.I have uploaded code for both 
 1)Flask web-app
 2)telegram bot (AskAtharva_bot)
----
-
-## 🚀 **Features**  
-✅ **Ask Questions Directly** – No need for `/ask`, just send a message!  
-✅ **Image-Based Q&A** – Upload an image and ask questions about it!  
-✅ **AI-Powered Responses** – Uses **Gemini 1.5 Flash** for intelligent answers.  
-✅ **Fast & Efficient** – Handles both text & image inputs with structured output.  
-✅ **Web Playground (Optional)** – Test AI responses in a browser!  
 
 ---
 
@@ -52,6 +44,17 @@ In addition to the Telegram bot, you can also use the **web interface** to uploa
 
 ## ⚙️ **Setup & Installation**  
 ## 1) This is for telegram bot 
+
+---
+
+## 🚀 **Features**  
+✅ **Ask Questions Directly** – No need for `/ask`, just send a message!  
+✅ **Image-Based Q&A** – Upload an image and ask questions about it!  
+✅ **AI-Powered Responses** – Uses **Gemini 1.5 Flash** for intelligent answers.  
+✅ **Fast & Efficient** – Handles both text & image inputs with structured output.  
+✅ **Web Playground (Optional)** – Test AI responses in a browser!  
+
+---
 ### 🛠 **1. Clone the Repository**  
 ```sh
 git clone https://github.com/Asp2591/telegram_bot_with_AI_agent.git
